@@ -1,4 +1,4 @@
-from jocs import janken
+import jocs
 while(True):
     print("\n -- Benvingut/da al mini arcade -- \n")
     print("1.Juga al pedra, paper o tisora")
@@ -7,9 +7,11 @@ while(True):
     opcio = input("Selecciona un joc: ")
     match opcio:
         case "1":
-            janken()
-        #case "2":
-        
+            jocs.janken()
+        case "2":
+            jocs.nana()
         case "S" | "s":
             print("Gracies per jugar! Fins aviat!")
             break
+        case _:
+            print("Opcio no valida. Si us plau, tria una opcio valida.")

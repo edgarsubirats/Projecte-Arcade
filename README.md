@@ -1,4 +1,4 @@
-# "Projecte Maquina Arcade"
+# Projecte Maquina Arcade
 ---
 
-### "Proba"
+### Proba

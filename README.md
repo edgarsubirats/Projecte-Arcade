@@ -11,4 +11,4 @@
 ### Pedra, Paper o Tisora
 #### El pedra paper i tisora, funciona creant la funcio janken, on el primer que fem es definir les variables per a que conten les rondes i les victories del jugador i la maquina. Despes amb un While on li diem al while amb les variables de les rondes que quan es passe del maxim de rondes es pare el bucle. Dins d'aquest bucle definim les opcions del joc i despres definim les regles del joc. 
 ### Endevinar un numero
-#### 
+#### En el joc d'endevinar un numero primer definim la varible que ens donara el numero secret i crearem la variable dels intents, despres amb un While True crearem el bucle. Amb la variable endevina crearem el input on tindrem que anar probant numeros fins que l'endevinesem.

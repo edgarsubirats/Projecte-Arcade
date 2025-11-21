@@ -3,7 +3,7 @@ import time
 import random
 
 def janken():
-    print("Benvingut/da al joc de Pedra, Paper o Tisora!")
+    print("-- Benvingut/da al joc de Pedra, Paper o Tisora! --\n")
     time.sleep(1)
     print ("1.Jugar a 3 rondes")
     print ("2.Jugar al millor de 5")

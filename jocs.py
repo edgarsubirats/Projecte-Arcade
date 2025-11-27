@@ -4,6 +4,8 @@ import random
 from robot import cara_creu_robot
 
 def janken():
+    dibuix2 = print ("""
+""")
     print("-- Benvingut/da al joc de Pedra, Paper o Tisora! --\n")
     time.sleep(1)
     print ("1.Jugar a 3 rondes")
@@ -68,6 +70,22 @@ def nana():
         else:
             print("Fred!")
 def cara_creu():
+    dibuix4 = print ("""
+⠀⠀⠀⠀⠀⠀⠀⢀⣠⣤⣤⣶⣶⣶⣶⣤⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⢀⣤⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣤⡀⠀⠀⠀⠀
+⠀⠀⠀⣴⣿⣿⣿⣿⣿⣿⣿⡿⠉⠉⢿⣿⣿⣿⣿⣿⣿⣿⣦⠀⠀⠀
+⠀⢀⣾⣿⣿⣿⣿⣿⣿⠟⠉⠁⠀⠀⠈⠙⢿⣿⣿⣿⣿⣿⣿⣷⡀⠀
+⠀⣾⣿⣿⣿⣿⣿⣿⡏⠀⠀⣤⣶⣶⣄⠀⠀⣻⣿⣿⣿⣿⣿⣿⣷⠀
+⢠⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠻⠿⠿⢿⣷⣶⣿⣿⣿⣿⣿⣿⣿⣿⡄
+⢸⣿⣿⣿⣿⣿⣿⣿⣿⣄⡀⠀⠀⠀⠀⠀⠙⢿⣿⣿⣿⣿⣿⣿⣿⡇
+⠘⣿⣿⣿⣿⣿⣿⣿⡿⠿⣿⣿⣶⣶⣶⡄⠀⠈⣿⣿⣿⣿⣿⣿⣿⠃
+⠀⢿⣿⣿⣿⣿⣿⣿⡀⠀⠘⠻⠿⠿⠟⠁⠀⢀⣿⣿⣿⣿⣿⣿⡿⠀
+⠀⠈⢿⣿⣿⣿⣿⣿⣷⣄⣀⠀⠀⠀⢀⣀⣤⣿⣿⣿⣿⣿⣿⡿⠁⠀
+⠀⠀⠀⠻⣿⣿⣿⣿⣿⣿⣿⣷⣀⣀⣾⣿⣿⣿⣿⣿⣿⣿⠟⠀⠀⠀
+⠀⠀⠀⠀⠈⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠛⠁⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠈⠙⠛⠛⠿⠿⠿⠿⠛⠛⠋⠁⠀⠀⠀⠀⠀⠀⠀
+""")
+    
     print ("\n -- Benvingut/da al joc de Cara o Creu -- \n")
     time.sleep(1)
     jugador = input ("Tria Cara o Creu: ").lower()
@@ -80,9 +98,9 @@ def cara_creu():
     if jugador == maquina:
         print("Has guanyat!")
     else:
-        print("La maquina ha guanyat!")
-    
-        
+        print("Has Perdut!")       
+
 if __name__ == "__main__":
     janken()
     nana()
+    cara_creu()

@@ -59,6 +59,14 @@ def nana():
         else:
             print(f"Felicitats! Has endevinat el numero {numero_secret} en {intents} intents.")
             break
+        diferencia = abs(numero_secret - endevina)
+        if diferencia <= 5:
+            print("Calent!")
+        elif diferencia <= 20:
+            print("Vas per bon cami!")
+        else:
+            print("Fred!")
+        
 if __name__ == "__main__":
     janken()
     nana()

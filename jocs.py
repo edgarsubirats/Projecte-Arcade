@@ -1,6 +1,7 @@
 from robot import robot
 import time
 import random
+from robot import cara_creu_robot
 
 def janken():
     print("-- Benvingut/da al joc de Pedra, Paper o Tisora! --\n")
@@ -66,6 +67,21 @@ def nana():
             print("Vas per bon cami!")
         else:
             print("Fred!")
+def cara_creu():
+    print ("\n -- Benvingut/da al joc de Cara o Creu -- \n")
+    time.sleep(1)
+    jugador = input ("Tria Cara o Creu: ").lower()
+    if jugador not in ["cara", "creu"]:
+        print("Opcio no valida. Si us plau, tria Cara o Creu.")
+        return cara_creu()
+    maquina = cara_creu_robot().playing()
+    print (f" Jugador -> {jugador}")
+    print (f" Maquina -> {maquina}")
+    if jugador == maquina:
+        print("Has guanyat!")
+    else:
+        print("La maquina ha guanyat!")
+    
         
 if __name__ == "__main__":
     janken()

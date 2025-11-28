@@ -2,6 +2,7 @@ from robot import robot
 import time
 import random
 from robot import cara_creu_robot
+from robot import tres_en_ratlla_robot
 
 def janken():
     dibuix2 = print ("""
@@ -100,7 +101,57 @@ def cara_creu():
     else:
         print("Has Perdut!")       
 
+def tres_en_ratlla():
+    print("\n --Benvingut/da al joc de Tres en Ratlla -- \n")
+    time.sleep(1)
+    while True:
+        thistruple1 = (' -  -  - ')
+        thistruple2 = (' -  -  - ')
+        thistruple3 = (' -  -  - ')
+        jugador = input("Tria X o O: ")
+        print(f"{thistruple1}")
+        print(f"{thistruple2}")
+        print(f"{thistruple3}")
+        maquina = tres_en_ratlla_robot().playing()
+        maquina = print ("X")
+        posicio = input (" Tria la posicio (1-9) on vols col.locar la teva fitxa: ")
+        match posicio:
+            case "1":
+                thistruple1 = (thistruple1[0])
+                print (f"{jugador}")
+            case "2":
+                thistruple1 = (thistruple1[1])
+                print (f"{jugador}")
+            case "3":
+                thistruple1 = (thistruple1[2])
+                print (f"{jugador}")
+            case "4":
+                thistruple2 = (thistruple2[0])
+                print (f"{jugador}")
+            case "5":
+                thistruple2 = (thistruple2[1])
+                print (f"{jugador}")
+            case "6":
+                thistruple2 = (thistruple2[2])
+                print (f"{jugador}")
+            case "7":
+                thistruple3 = (thistruple3[0])
+                print (f"{jugador}")
+            case "8":
+                thistruple3 = (thistruple3[1])
+                print (f"{jugador}")
+            case "9":
+                thistruple3 = (thistruple3[2])
+                print (f"{jugador}")
+            case _:
+                print("Opcio no valida. Si us plau, tria una posicio entre 1 i 9.")
+                return tres_en_ratlla()
+        print (f"{thistruple1}")
+        print (f"{thistruple2}")
+        print (f"{thistruple3}")
+
 if __name__ == "__main__":
     janken()
     nana()
     cara_creu()
+    tres_en_ratlla()

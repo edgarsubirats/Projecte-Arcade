@@ -18,7 +18,7 @@ class cara_creu_robot:
 
 class tres_en_ratlla_robot:
     name = "machine"
-    game1 = [["1a", "2a ", "3a"],] 
+    game1 = [["1a", "2a ", "3a","1b"],] 
     def playing(self):
         while True:
                 break

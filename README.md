@@ -17,5 +17,3 @@
 
 ### Cara o Creu
 #### El joc de cara o creu funciona primerament amb un input perquè puguem triar entre cara o creu després amb la nova classe creada per al robot on en l'arxiu del robot creem una classe amb el nom cara_creu_robot on en aquesta classe tindrem una variable amb el nom game que seran les dues opcions possibles cara o creu, després a l'arxiu del joc amb una funció IF el que fem és que si el jugador ha posat una de les dues opcions i el robot ha posat la mateixa el jugador ha guanyat sinó el jugador ha perdut.
-
-### Tres en Raya
